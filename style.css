@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
   margin-top: 6rem;
   font-weight: bold;
@@ -436,3 +436,16 @@ header, header nav {
 
 }
   
+@media (max-width: 450px) {
+
+  .buttons {
+    flex-direction: column;
+
+  }
+
+  .buttons .download-cta {
+    margin-top: 40px;
+  }
+  
+  }
+    
