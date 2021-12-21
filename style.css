@@ -137,6 +137,7 @@ p[role=doc-subtitle] a:hover {
 .buttons {
   margin: 60px 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
