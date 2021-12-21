@@ -42,12 +42,12 @@ main {
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: 28px;
   letter-spacing: 2px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 26px;
   text-align: center;
   margin-top: 6rem;
   font-weight: bold;
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 22px;
 }
 
 .top {
@@ -160,7 +160,7 @@ header a {
   font-family: var(--font-headline);
   text-decoration: none;
   color: var(--color-black);
-  font-size: 1.1rem;
+
   position: relative;
 }
 
@@ -180,7 +180,7 @@ header nav ul li a {
   font-family: var(--font-headline);
   text-decoration: none;
   color: var(--color-black);
-  font-size: 1.1rem;
+
   position: relative;
 }
 
@@ -276,7 +276,7 @@ footer {
   justify-content: center;
   font-family: var(--font-headline);
   padding: 50px 0 0 0;
-  font-size: 1.1rem;
+
 }
 
 footer a {
@@ -348,9 +348,7 @@ footer a:hover {
   border-radius: 40px 40px;
 }
 
-.box ul li, .box p {
-  font-size: 0.8rem;
-}
+
 
 .box {
   width: 400px;
