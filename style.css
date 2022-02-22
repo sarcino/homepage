@@ -142,7 +142,8 @@ p[role=doc-subtitle] a:hover {
   border: 2px solid var(--color-black);
 }
 
-.cta:hover, .download:hover {
+.cta:hover,
+.download:hover {
   background-color: var(--color-white);
   border: 2px solid var(--color-blue);
   color: var(--color-blue);
@@ -161,6 +162,7 @@ p[role=doc-subtitle] a:hover {
 
 .logo:hover {
   color: var(--color-blue);
+
 }
 
 header,
@@ -184,7 +186,6 @@ header nav ul li {
   padding: 0px;
   margin-left: 20px;
 }
-
 
 header {
   justify-content: space-between;
@@ -221,9 +222,6 @@ nav ul li a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1)
 }
-
-
-
 
 /* NAVIGATION END */
 
@@ -496,122 +494,4 @@ footer p {
     margin-top: 40px;
   }
 
-}
-
-
-/* PORTFOLIO */
-
-.app-image svg {
-  max-width: 150px;
-  width: 200px;
-}
-
-.app-description, .app-pain-points, .app-wireframes, .app-usability-study {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.app-description section, .app-pain-points section, .app-usability-study section {
-  width: 350px;
-  max-width: 350px;
-}
-
-.app-wireframes section {
-  width: 400px;
-  max-width: 400px;
-}
-
-.app-wireframes img {
-width: 400px;
-max-width: 400px;
-height: auto;
-}
-
-.snip {
-  width: 100%;
-  height: auto;
-}
-
-.app-image-learnings svg, .app-image-learnings {
-  width: 500px;
-  max-width: 500px;
-  height: auto;
-  margin: 50px 0 50px 0;
-}
-
-.app-image-learnings {
-  margin: 0 auto;
-}
-
-a {
-  color: var(--color-black);
-}
-
-.app-cta {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.waste-app-link {
-  text-decoration: none;
-}
-
-.sorting-app, .wedding-dj, .coding-courses { 
-  padding: 50px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  align-content: center;
-
-}
-
-.sorting-app {
-  background-color: #8DC63F;
-  border: 2px solid #8DC63F;
-}
-
-
-.sorting-app:hover {
-  background-color: white;
-  border: 2px solid #8DC63F;  
-}
-
-.sorting-app h2, .wedding-dj h2, .coding-courses h2 {
-  margin-top: 0;
-}
-
-.sorting-app section svg, .wedding-dj section svg, .coding-courses section svg {
-  width: 80px;
-  max-width: 80px;
-  height: auto;  
-}
-
-.wedding-dj {
-background-color: #e1e1e1;
-border: 2px solid #e1e1e1;
-}
-
-.wedding-dj-link, .coding-courses-link {
-  text-decoration: none;
-}
-
-.wedding-dj:hover {
-  background-color: #ffffff;
-  border: 2px solid #e1e1e1;
-}
-
-.coding-courses {
-  background-color: rgb(211, 123, 211);
-  border: 2px solid rgb(211, 123, 211);
-}
-
-.coding-courses:hover {
-  background-color: #ffffff;
-  border: 2px solid rgb(211, 123, 211);
 }
