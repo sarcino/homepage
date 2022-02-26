@@ -254,7 +254,7 @@ nav ul li a:hover:before {
 
 /* REFERENCES */
 
-.references .reference {
+.references {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -271,6 +271,16 @@ nav ul li a:hover:before {
   padding: 60px 20px;
   margin: 20px 0;
   text-align: center;
+}
+
+.review {
+  margin: 10px;
+}
+
+.reference {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 figcaption {
@@ -291,7 +301,8 @@ figure {
 .prev-btn, .next-btn {
   border: 0; 
   cursor: pointer;
-  background: var(--color-grey);
+  background: var(--color-white);
+  border: 1px solid var(--color-black);
   padding: 15px;
   border-radius: 50%;
   height: 60px;
