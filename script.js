@@ -3,7 +3,7 @@ const reviews = [
         id: 1,
         name: "KAREL HASEK",
         job: "former direct manager",
-        text: "I had the pleasure to work with Sarka for almost 2 years. Not only she has excellent people skills and is able to work seamlessly with many different roles both internally and externally, her technical knowledge is also of the highest level. She’s extremely fast learner. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. I can wholeheartedly recommend Sarka."
+        text: "Sarka has excellent people skills and is able to work seamlessly with many different roles both internally and externally, her technical knowledge is also of the highest level. She’s extremely fast learner. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. I can wholeheartedly recommend Sarka."
     },
     {
         id: 2,
