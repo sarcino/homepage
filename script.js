@@ -8,7 +8,7 @@ const reviews = [
     {
         id: 2,
         name: "CRISTINA IORDAN",
-        job: "my direct manager",
+        job: "direct manager",
         text: "A pleasure to recommend Sarka as a very bright and motivated person that she is. A quick learner, which has shown the ability to work on multiple projects, prioritizing the marketing requests in line with business priorities. Sarka is remarkable through high quality output delivery, on time, in budget and within scope."
     },
     {
