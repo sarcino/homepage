@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 :root {
-  --font-headline: "Josefin Sans", sans-serif;
+  --font-headline: 'Prata', serif;
   --font-poppins: 'Poppins', sans-serif;
-  --color-black: #19181f;
-  --color-blue: #341fff;
+  --color-black: #14080e;
+  --color-blue: #FD3E16;
   --color-white: #ffffff;
-  --color-grey: #f7f8fa;
+  --color-alabaster: #eeebe2;
 }
 
 ::selection {
   background-color: var(--color-black);
-  color: var(--color-grey);
+  color: var(--color-alabaster);
 }
 
 * {
@@ -27,10 +26,8 @@ html {
 }
 
 body {
-  background-color: var(--color-grey);
   font-size: 15px;
-  background: -webkit-linear-gradient(to left, #ffffff, #f7f8fa);
-  background: linear-gradient(to left, #ffffff, #f7f8fa);
+  color: var(--color-black);
   margin: 0;
 }
 
@@ -46,32 +43,32 @@ main {
 }
 
 h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
+  font-size: 2.8rem; 
   line-height: 1;
-  letter-spacing: -0.02em;
-  font-family: var(--font-poppins);
+  letter-spacing: 0.09em;
+  font-family: var(--font-headline);
 }
 
 h2 {
   font-size: 2.2rem;
   text-align: center;
   margin-top: 6rem;
-  font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.09em;
+  font-family: var(--font-headline);
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  font-family: var(--font-headline);
 }
 
 .subheading {
   text-align: center;
   margin-bottom: 4rem;
-}
-
-h3 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
+  font-family: var(--font-poppins);
 }
 
 .top {
@@ -83,10 +80,6 @@ h3 {
   margin: 6rem 0;
 }
 
-.top span {
-  color: var(--color-blue);
-}
-
 .resume .reference .contact {
   margin: 90px 0;
 }
@@ -95,6 +88,7 @@ h3 {
   width: 400px;
   max-width: 400px;
   position: relative; 
+  border-radius: 4px;
 }
 
 /* VIDEO */
@@ -103,7 +97,7 @@ h3 {
   width: 350px;
   max-width: 350px;
   margin-bottom: 20px;
-  position: relative;
+  position: relative; 
 }
 
 .video video {
@@ -111,6 +105,7 @@ h3 {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  border-radius: 4px;
 }
 
 .text {
@@ -137,24 +132,23 @@ p[role=doc-subtitle] a:hover {
 .cta,
 .download {
   background-color: var(--color-black);
-  color: #ffffff;
+  color: var(--color-white);
   padding: 10px 25px;
   cursor: pointer;
   text-decoration: none;
+  border: 1px solid var(--color-black);
   border-radius: 4px;
-  border: 2px solid var(--color-black);
 }
 
 .cta:hover,
 .download:hover {
   background-color: var(--color-white);
-  border: 2px solid var(--color-blue);
+  border: 1px solid var(--color-blue);
   color: var(--color-blue);
-  border-radius: 4px;
 }
 
 .buttons {
-  margin: 60px 0;
+  margin: 90px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -165,7 +159,6 @@ p[role=doc-subtitle] a:hover {
 
 .logo:hover {
   color: var(--color-blue);
-
 }
 
 header,
@@ -177,7 +170,7 @@ header nav ul {
 }
 
 header a {
-  font-family: var(--font-headline);
+  font-family: var(--font-poppins);
   text-decoration: none;
   color: var(--color-black);
   font-size: 1.1rem;
@@ -197,10 +190,10 @@ header {
 }
 
 header nav ul li a {
-  font-family: var(--font-headline);
+  font-family: var(--font-poppins);
   text-decoration: none;
   color: var(--color-black);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   position: relative;
 }
 
@@ -208,7 +201,7 @@ nav ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 7px;
+  height: 5px;
   bottom: .1px;
   left: 0;
   z-index: -1;
@@ -346,7 +339,6 @@ nav ul li a:hover:before {
 
 .certification .link:hover {
   border-bottom: none;
-  color: var(--color-blue);
 }
 
 /* REFERENCES */
@@ -361,8 +353,7 @@ nav ul li a:hover:before {
   background-color: var(--color-white);
   padding: 50px;
   display: flex;
-  flex-direction: column;
- 
+  flex-direction: column; 
   text-align: center;
   min-height: 300px;
 }
@@ -393,10 +384,6 @@ nav ul li a:hover:before {
   border: 0;
 }
 
-.next-btn {
-  margin-left: 20px;
-}
-
 .prev-btn svg, .next-btn svg {
   height: 25px;
 }
@@ -405,16 +392,21 @@ nav ul li a:hover:before {
 
 /* CONTACT */
 
+.contact {
+  background-color: var(--color-alabaster);
+  padding: 10px 0 50px;
+}
+
 .contact ul {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
+  font-family: var(--font-poppins);  
 }
 
 .contact ul li {
   line-height: 2.5rem;
-  font-weight: bold;
-  text-align: center;
+  text-align: center;  
 }
 
 .contact li a {
@@ -425,24 +417,6 @@ nav ul li a:hover:before {
 
 .contact li a:hover {
   border-bottom: none;
-  color: var(--color-blue);
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.skills section {
-  width: 250;
-  max-width: 250px;
-}
-
-.skills ul {
-  list-style-type: none;
-  padding-left: 0;
-  line-height: 1.8;
 }
 
 /* CONTACT END */
@@ -454,21 +428,18 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: var(--font-headline);
-   
+  font-family: var(--font-poppins);  
 }
 
 footer a {
   text-decoration: none;
   color: var(--color-black);
   border-bottom: 2px solid var(--color-black);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 footer a:hover {
-  color: var(--color-blue);
-  border-bottom: 2px solid var(--color-grey);
-  font-size: 1.1rem;
+ border-bottom: none;
 }
 
 footer p {
@@ -573,7 +544,7 @@ footer p {
   justify-content: center;
   width: 2em;
   height: 2em;
-  background-color: var(--color-grey);
+  background-color: var(--color-alabaster);
   border: 1px solid var(--color-black);
   border-radius: 50%;
   position: absolute;
@@ -586,7 +557,7 @@ footer p {
     content: "";
     width: 1px;
     height: 100%;
-    background: black;
+    background: var(--color-black);
     position: absolute;
     top: 10px;
     left: 4.5%;
