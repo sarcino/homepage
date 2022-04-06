@@ -96,8 +96,8 @@ p {
 
 .about-me-picture {
   max-width: 400px;
+  height: auto;
   position: relative; 
-  border-radius: 4px;
 }
 
 /* VIDEO */
@@ -620,6 +620,12 @@ footer p {
 
   .buttons .download-cta {
     margin-top: 40px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
