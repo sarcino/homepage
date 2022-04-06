@@ -95,9 +95,10 @@ p {
 }
 
 .about-me-picture {
-  max-width: 350px;
+  max-width: 100%;
   height: auto;
 }
+
 
 /* VIDEO */
 
