@@ -95,7 +95,6 @@ p {
 }
 
 .about-me-picture {
-  width: 400px;
   max-width: 400px;
   position: relative; 
   border-radius: 4px;
