@@ -57,7 +57,7 @@ h1 span {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   margin-top: 6rem;
   letter-spacing: 0.09em;
@@ -366,7 +366,7 @@ nav ul li a:hover:before {
 }
 
 .review {
-  padding: 50px;
+  padding: 15px;
   display: flex;
   flex-direction: column; 
   text-align: center;
