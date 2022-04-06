@@ -5,7 +5,8 @@
   --font-headline: 'Prata', serif;
   --font-poppins: 'Poppins', sans-serif;
   --color-black: #14080e;
-  --color-blue: #FD3E16;
+  --color-text: #332D30;
+  --color-red: #FD3E16;
   --color-white: #ffffff;
   --color-alabaster: #eeebe2;
 }
@@ -27,7 +28,6 @@ html {
 
 body {
   font-size: 15px;
-  color: var(--color-black);
   margin: 0;
 }
 
@@ -42,9 +42,12 @@ main {
   font-family: var(--font-poppins);
 }
 
+h1, h2, h3 {
+  color: var(--color-black);
+}
+
 h1 {
   font-size: 2.8rem; 
-  line-height: 1;
   letter-spacing: 0.09em;
   font-family: var(--font-headline);
 }
@@ -53,16 +56,19 @@ h2 {
   font-size: 2rem;
   text-align: center;
   margin-top: 6rem;
-  line-height: 1;
   letter-spacing: 0.09em;
   font-family: var(--font-headline);
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   letter-spacing: 0.09em;
   font-family: var(--font-headline);
+}
+
+p {
+  color: var(--color-text);
 }
 
 .subheading {
@@ -125,8 +131,8 @@ p[role=doc-subtitle] a {
 
 p[role=doc-subtitle] a:hover {
   text-decoration: none;
-  color: var(--color-blue);
-  border-bottom: 2px solid var(--color-blue);
+  color: var(--color-red);
+  border-bottom: 2px solid var(--color-red);
 }
 
 .cta,
@@ -143,8 +149,8 @@ p[role=doc-subtitle] a:hover {
 .cta:hover,
 .download:hover {
   background-color: var(--color-white);
-  border: 1px solid var(--color-blue);
-  color: var(--color-blue);
+  border: 1px solid var(--color-red);
+  color: var(--color-red);
 }
 
 .buttons {
@@ -157,8 +163,16 @@ p[role=doc-subtitle] a:hover {
 
 /* NAVIGATION */
 
-.logo:hover {
-  color: var(--color-blue);
+
+.logo {
+    padding: 120px 0 0 0;
+    overflow: hidden;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    height: 0px;
+    width: 120px;
+    height: 120px;
+    margin: 0;
 }
 
 header,
@@ -205,7 +219,7 @@ nav ul li a:before {
   bottom: .1px;
   left: 0;
   z-index: -1;
-  background-color: var(--color-blue);
+  background-color: var(--color-red);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -249,7 +263,7 @@ nav ul li a:hover:before {
 
 .portfolio-item a:hover {
   border-bottom: 2px solid var(--color-grey);
-  color: var(--color-blue);
+  color: var(--color-red);
 }
 
 .column-1,
@@ -267,7 +281,7 @@ nav ul li a:hover:before {
 }
 
 .app a:hover, .prototype:hover {
-  color: var(--color-blue);
+  color: var(--color-red);
   border-bottom: 1px solid var(--color-grey);
 }
 
@@ -331,13 +345,13 @@ nav ul li a:hover:before {
   height: auto;
 }
 
-.certification .link {
+.link {
   text-decoration: none;
   color: var(--color-black);
   border-bottom: 2px solid var(--color-black);
 }
 
-.certification .link:hover {
+.link:hover {
   border-bottom: none;
 }
 
@@ -350,12 +364,12 @@ nav ul li a:hover:before {
 }
 
 .review {
-  background-color: var(--color-white);
   padding: 50px;
   display: flex;
   flex-direction: column; 
   text-align: center;
   min-height: 300px;
+  color: var(--color-text);
 }
 
 .review figure {
@@ -392,11 +406,6 @@ nav ul li a:hover:before {
 
 /* CONTACT */
 
-.contact {
-  background-color: var(--color-alabaster);
-  padding: 10px 0 50px;
-}
-
 .contact ul {
   list-style-type: none;
   margin-left: 0;
@@ -409,13 +418,13 @@ nav ul li a:hover:before {
   text-align: center;  
 }
 
-.contact li a {
+.contact li a, h3 a {
   text-decoration: none;
   border-bottom: 2px solid var(--color-black);
   color: var(--color-black);
 }
 
-.contact li a:hover {
+.contact li a:hover, h3 a:hover {
   border-bottom: none;
 }
 
@@ -443,7 +452,7 @@ footer a:hover {
 }
 
 footer p {
-  color: var(--color-black);
+  color: var(--color-text);
   font-weight: lighter;
   font-size: 0.8rem;
   padding: 50px 0 0 0;
@@ -514,6 +523,7 @@ footer p {
   width: 400px;
   max-width: 400px;
   font-family: var(--font-poppins);
+  color: var(--color-text);
   padding: 25px;
   background: var(--color-white);
 }
@@ -529,7 +539,7 @@ footer p {
 }
 
 .box a:hover {
-  color: var(--color-blue);
+  color: var(--color-red);
   border-bottom: 2px solid var(--color-grey);
 }
 
@@ -544,7 +554,7 @@ footer p {
   justify-content: center;
   width: 2em;
   height: 2em;
-  background-color: var(--color-alabaster);
+  background-color: var(--color-red);
   border: 1px solid var(--color-black);
   border-radius: 50%;
   position: absolute;
