@@ -615,6 +615,10 @@ footer p {
     align-items: center;
   }
 
+  header nav ul li {
+    margin-top: 10px;
+  }
+
 }
 
 @media (max-width: 450px) {
