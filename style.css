@@ -348,6 +348,10 @@ nav ul li a:hover:before {
   height: auto;
 }
 
+.certification-details {
+  margin-top: 30px;
+}
+
 .link {
   text-decoration: none;
   color: var(--color-black);
