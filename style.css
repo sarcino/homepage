@@ -91,6 +91,7 @@ p a:hover {
 
 li {
   line-height: 2;
+  color: var(--color-text);
 }
 
 .subheading {
