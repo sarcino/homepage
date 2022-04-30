@@ -6,7 +6,7 @@
   --font-headline: 'Lora', serif;
   --font-poppins: 'Poppins', sans-serif;
   --color-black: #14080e;
-  --color-text: #332D30;
+  --color-text: #535353;
   --color-red: #FD3E16;
   --color-white: #ffffff;
   --color-alabaster: #eeebe2;
@@ -43,15 +43,15 @@ main {
   font-family: var(--font-poppins);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: var(--color-black);
   font-weight: 500;
+  font-family: var(--font-headline);
+  letter-spacing: 0.09em;
 }
 
 h1 {
   font-size: 2.8rem; 
-  letter-spacing: 0.09em;
-  font-family: var(--font-headline);
 }
 
 h1 span {
@@ -62,16 +62,18 @@ h2 {
   font-size: 1.6rem;
   text-align: center;
   margin-top: 6rem;
-  letter-spacing: 0.09em;
-  font-family: var(--font-headline);
 }
 
 h3 {
   font-size: 1.2rem;
   line-height: 1.5;
-  letter-spacing: 0.09em;
-  font-family: var(--font-headline);
 }
+
+h4 {
+  font-size: 1rem;
+}
+
+
 
 p {
   color: var(--color-text);
@@ -321,7 +323,7 @@ nav ul li a:hover:before {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
 }
 
@@ -334,6 +336,19 @@ nav ul li a:hover:before {
   width: 200px;
   max-width: 100%;
   height: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.column {
+ text-align: center;
+max-width: 300px;
 }
 
 /* PORTFOLIO END */
