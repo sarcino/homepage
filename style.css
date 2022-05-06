@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --font-headline: "Della Resira", serif;
+  --font-headline: "Poppins", sans-serif;
   --font-poppins: "Open Sans", sans-serif;
   --color-black: #14080e;
   --color-text: #14080e;
@@ -44,7 +45,7 @@ main {
 
 h1, h2, h3, h4 {
   color: var(--color-black);
-  font-weight: 500;
+  font-weight: 700;
   font-family: var(--font-headline);
   letter-spacing: 0.09em;
 }
