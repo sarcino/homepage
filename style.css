@@ -200,8 +200,8 @@ p[role=doc-subtitle] a:hover {
     background-image: url("logo.svg");
     background-repeat: no-repeat;
     height: 0px;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin: 0;
     font-size: 2px;
 }
@@ -235,10 +235,10 @@ header {
 }
 
 header nav ul li a {
-  font-family: var(--font-poppins);
+  font-family: var(--font-headline);
   text-decoration: none;
   color: var(--color-black);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   position: relative;
 }
 
@@ -560,7 +560,7 @@ footer p {
 
 .box ul li,
 .box p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .box {
