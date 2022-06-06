@@ -569,7 +569,7 @@ footer p {
   font-family: var(--font-poppins);
   color: var(--color-text);
   padding: 25px;
-  background: var(--color-white);
+  border: 1px solid var(--color-black);
 }
 
 .box h3 {
