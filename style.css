@@ -82,6 +82,7 @@ h4 {
 h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  line-height: 2rem;
 }
 
 h2 {
@@ -300,8 +301,12 @@ footer ul li {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-
   }
+
+  nav ul {
+    
+  }
+ 
 
   .video {
     width: 250px;
