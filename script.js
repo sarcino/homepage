@@ -5,7 +5,7 @@ const reviews = [
         id: 1,
         name: "KAREL HASEK",
         job: "former direct manager",
-        text: "Her technical knowledge is also of the highest level. She’s extremely fast learner. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. I can wholeheartedly recommend Sarka."
+        text: "Her technical knowledge is of the highest level. She’s extremely fast learner. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. I can wholeheartedly recommend Sarka."
     },   
     {
         id: 2,
