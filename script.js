@@ -1,12 +1,23 @@
+// HAMBURGER MENU
+
+var hamburger = document.querySelector(".hamburger");
+var navigation = document.querySelector(".nav-box");
+
+hamburger.addEventListener("click", function () {
+    console.log("hello");
+    navigation.classList.toggle("show-nav");
+});
+
+
+
 // REVIEWS
 
-const reviews = [
-    {
+const reviews = [{
         id: 1,
         name: "KAREL HASEK",
         job: "former direct manager",
         text: "Her technical knowledge is of the highest level. She’s extremely fast learner. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. I can wholeheartedly recommend Sarka."
-    },   
+    },
     {
         id: 2,
         name: "CRISTINA IORDAN",
@@ -55,9 +66,9 @@ function showPerson(person) {
 
 // SHOW NEXT PERSON
 
-nextBtn.addEventListener("click", function() {
+nextBtn.addEventListener("click", function () {
     currentItem++;
-    if(currentItem > reviews.length - 1) {
+    if (currentItem > reviews.length - 1) {
         currentItem = 0;
     }
     showPerson(currentItem);
@@ -65,9 +76,9 @@ nextBtn.addEventListener("click", function() {
 
 // SHOW PREV PERSON
 
-prevBtn.addEventListener("click", function() {
+prevBtn.addEventListener("click", function () {
     currentItem--;
-    if(currentItem < 0) {
+    if (currentItem < 0) {
         currentItem = reviews.length - 1;
     }
     showPerson(currentItem);
