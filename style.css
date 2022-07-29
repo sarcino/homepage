@@ -21,6 +21,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 
 }
 
@@ -90,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin: 50px 0;
 }
 
@@ -355,7 +356,7 @@ nav ul li .resume:hover {
 
 .video {
   width: 700px;
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 50px 0 0;
   position: relative;
   border-radius: 200px;
@@ -480,14 +481,9 @@ footer ul li {
   .video {
     width: 250px;
     max-width: 250px;
-    margin: 0 50px 0 0;
+    margin: 0 auto;
     position: relative;
     border-radius: 200px;
-  }
-
-  .about-me video {
-    margin-left: 50vw;
-    transform: translate(-50%);
   }
 
   .two-columns div {
