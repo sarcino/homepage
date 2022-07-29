@@ -1,14 +1,3 @@
-// HAMBURGER MENU
-
-var hamburger = document.querySelector(".hamburger");
-var navigation = document.querySelector(".nav-box");
-
-hamburger.addEventListener("click", function () {
-    console.log("hello");
-    navigation.classList.toggle("show-nav");
-});
-
-
 
 // REVIEWS
 
