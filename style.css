@@ -380,6 +380,7 @@ nav ul li .resume:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
+  margin: 0;
 }
 
 .portfolio-list ul li div {
@@ -530,6 +531,11 @@ footer ul li {
 
   nav ul li {
     margin: 10px;
+  }
+
+  .portfolio-list ul {  
+    justify-content: center;
+   
   }
 
 }
