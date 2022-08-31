@@ -173,7 +173,7 @@ nav ul {
   flex-direction: row;
   justify-content: end;
   align-items: center;
-  gap: 30px;
+  column-gap: 30px;
 }
 
 
