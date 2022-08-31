@@ -60,8 +60,7 @@ ul {
 }
 
 
-main a,
-footer a {
+main a {
   text-decoration: none;
   color: var(--color-black);
   border-bottom: 2px solid var(--color-black);
@@ -173,12 +172,10 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: center;
+  align-items: flex-end;
+  gap: 30px;
 }
 
-nav ul li {
-  padding-left: 30px;
-}
 
 nav ul li a {
   font-family: var(--font-text);
@@ -443,8 +440,10 @@ nav ul li .resume:hover {
 
 /* FOOTER */
 
-footer {
-  background-color: var(--color-purple);
+footer { 
+  background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-yellow));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
   margin: 50px 0 0 0;
   padding: 40px 0 50px 0;
 }
@@ -457,19 +456,31 @@ footer p {
 
 footer ul {
   list-style-type: none;
-  margin: 30px 0;
+  margin: 50px 0;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
 }
 
 footer ul li {
   font-family: var(--font-text);
 }
 
-.show-nav {
-  visibility: hidden;
-  opacity: 0;
+footer ul li {
+  text-decoration: none;
 }
 
+footer ul li a:hover .icon {
+  transition: all 0.3s ease 0s;
+}
+
+footer ul li a:hover .icon {
+  fill: transparent;
+  stroke: var(--color-black);
+}
 
 @media (max-width: 750px) {
 
@@ -533,9 +544,24 @@ footer ul li {
     margin: 10px;
   }
 
-  .portfolio-list ul {  
+  .portfolio-list ul {
     justify-content: center;
-   
+
   }
 
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
