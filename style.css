@@ -443,7 +443,7 @@ nav ul li .resume:hover {
 footer { 
   background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-yellow));
   background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
+  animation: gradient 20s ease infinite;
   margin: 50px 0 0 0;
   padding: 40px 0 50px 0;
 }
