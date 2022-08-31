@@ -172,7 +172,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: flex-end;
+  align-items: center;
   gap: 30px;
 }
 
