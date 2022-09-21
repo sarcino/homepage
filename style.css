@@ -214,7 +214,6 @@ nav ul li .nav-item:hover:before {
   font-weight: bold;
 }
 
-
 nav ul li .resume {
   padding: 15px 20px;
   background: var(--color-yellow);
@@ -480,6 +479,11 @@ footer ul li a:hover .icon {
 footer ul li a:hover .icon {
   fill: transparent;
   stroke: var(--color-black);
+}
+
+.footer-info {
+ text-align: center; 
+ font-size: 0.7rem;
 }
 
 @media (max-width: 750px) {
