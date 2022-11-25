@@ -112,7 +112,10 @@ footer h2 {
   text-align: center;
   padding: 10px 0;
   margin-bottom: 100px;
-  height: 40vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 
