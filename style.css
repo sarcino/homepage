@@ -116,7 +116,6 @@ footer h2 {
 }
 
 
-
 /* NAVIGATION */
 
 nav {
@@ -304,9 +303,7 @@ footer {
   height: 100vh;
   background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-yellow));
   background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
-  -webkit-animation: animation 5s ease infinite;
-  -moz-animation: animation 5s ease infinite;
+  animation: gradient 15s ease infinite;
   margin: 50px 0 0 0;
   padding: 60px 0;
   display: flex;
