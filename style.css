@@ -21,8 +21,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-
 }
 
 html {
@@ -59,7 +57,6 @@ ul {
   margin-top: 30px;
 }
 
-
 main a {
   text-decoration: none;
   color: var(--color-black);
@@ -91,15 +88,6 @@ h1 {
 
 h2 {
   font-size: 2.1rem;
-  margin: 50px 0;
-}
-
-.middle {
-  text-align: center;
-}
-
-footer h2 {
-  text-align: center;
 }
 
 h3 {
@@ -112,47 +100,22 @@ h4 {
   font-size: 1.3rem;
 }
 
+.subheading {
+  margin-bottom: 50px;
+}
+
+footer h2 {
+  text-align: center;
+}
+
 .intro {
   text-align: center;
   padding: 10px 0;
   margin-bottom: 100px;
+  height: 40vh;
 }
 
-.two-columns {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
-.two-columns div {
-  width: 30vw;
-  max-width: 400px;
-  text-align: left;
-}
-
-.wide-picture {
-  margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  z-index: 100;
-}
-
-.purple-background {
-  background-color: var(--color-purple);
-  padding-top: 10px;
-  padding-bottom: 60px;
-  margin: 100px 0 100px 0;
-}
-
-.purple-background h3 {
-  margin: 0;
-}
 
 /* NAVIGATION */
 
@@ -176,7 +139,6 @@ nav ul {
   column-gap: 30px;
 }
 
-
 nav ul li a {
   font-family: var(--font-text);
   font-size: 0.9rem;
@@ -186,7 +148,6 @@ nav ul li a {
   font-weight: bolder;
   position: relative;
 }
-
 
 nav ul li .nav-item:before {
   content: "";
@@ -236,47 +197,15 @@ nav ul li .resume:hover {
   border: 1px solid var(--color-yellow);
 }
 
-.hamburger {
-  display: none;
-}
-
 /* NAVIGATION END */
-
-/* PORTFOLIO */
-.portfolio {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 200px;
-}
-
-.column-1,
-.column-2 {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-
-.column-1 {
-  margin-right: 10vw;
-  order: 1;
-}
-
-.column-2 {
-  order: 2;
-}
-
-.portfolio figure {
-  margin-bottom: 50px;
-  flex-basis: 30%;
-}
-
-/* PORTFOLIO END */
 
 /* REFERENCES */
 
 .references {
   text-align: center;
-  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #author {
@@ -293,16 +222,15 @@ nav ul li .resume:hover {
 
 .reference {
   display: flex;
-  margin-top: 50px;
   justify-content: center;
 }
 
 .review {
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 60vw;
+  max-width: 55vw;
   min-height: 300px;
   color: var(--color-text);
 }
@@ -320,10 +248,11 @@ nav ul li .resume:hover {
   cursor: pointer;
   background: 0;
   padding: 15px;
+  margin-top: 60px;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  border: 0;
+  height: 70px;
+  width: 70px;
+  border: 0.1px solid var(--color-black);
 }
 
 .prev-btn svg,
@@ -367,75 +296,7 @@ nav ul li .resume:hover {
   border-radius: 200px;
 }
 
-/* PORTFOLIO */
-
-.portfolio-list ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  margin: 0;
-}
-
-.portfolio-list ul li div {
-  background: var(--color-yellow);
-  border: 1px solid var(--color-yellow);
-  height: 300px;
-  width: 300px;
-  margin-top: 10px;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease 0s;
-}
-
-.portfolio-list ul li div p {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.portfolio-list ul li div:hover {
-  background: none;
-  border: 1px solid var(--color-yellow);
-}
-
-/* PORTFOLIO END*/
-
-
-
-/* PHOTO CONTAINER */
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-.column {
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-@media screen and (max-width: 700px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-
-/* PHOTO CONTAINER END */
+/* VIDEO END */
 
 /* FOOTER */
 
@@ -443,9 +304,14 @@ footer {
   height: 100vh;
   background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-yellow));
   background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 5s ease infinite;
+  -webkit-animation: animation 5s ease infinite;
+  -moz-animation: animation 5s ease infinite;
   margin: 50px 0 0 0;
   padding: 60px 0;
+  display: flex;
+ 
+  justify-content: center;
  
 }
 
