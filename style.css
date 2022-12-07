@@ -46,6 +46,7 @@ body {
 main {
   margin: 0;
   font-family: var(--font-text);
+  margin-top: 50px;
 }
 
 p {
@@ -88,12 +89,15 @@ h1 {
 
 h2 {
   font-size: 2.1rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
   font-size: 1.8rem;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 h4 {
@@ -102,6 +106,10 @@ h4 {
 
 .subheading {
   margin-bottom: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  font-weight: 500;
 }
 
 footer h2 {
@@ -112,18 +120,26 @@ footer h2 {
   text-align: center;
   padding: 10px 0;
   margin-bottom: 100px;
-  height: 50vh;
+  
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
+/* HERO END */
+
+.hero {
+  width: 100vw;
+ height: auto;
+  
+}
+
+/* HERO END */
 
 /* NAVIGATION */
 
 nav {
   margin-top: 50px;
-  margin-bottom: 100px;
 }
 
 .nav-box {
@@ -249,11 +265,11 @@ nav ul li .resume:hover {
 .next-btn {
   cursor: pointer;
   background: 0;
-  padding: 15px;
-  margin-top: 60px;
+  padding: 6px;
+  margin-top: 50px;
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border: 0.1px solid var(--color-black);
 }
 
@@ -299,6 +315,64 @@ nav ul li .resume:hover {
 }
 
 /* VIDEO END */
+
+/* PROJECTS */
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 10px;  
+}
+
+.two-columns div {
+  max-width:450px;
+}
+
+.two-columns img {
+  max-width: 500px;
+  height: auto;
+}
+
+.image-large {
+  width: 100%;
+  max-width: 1020px;
+  height: auto;
+  margin: 30px 0;
+}
+
+.image-small {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background: var(--color-black);
+  border-radius: 25px;
+  color: var(--color-alabaster);
+  text-decoration: none;
+  font-family: var(--font-text);
+  border: 1px solid var(--color-black);
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+
+.button:hover {
+  background: none;
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+/* PROJECTS END */
 
 /* FOOTER */
 
@@ -396,24 +470,7 @@ footer ul li a:hover .icon {
     margin-top: 50px;
   }
 
-  .portfolio {
-    flex-wrap: wrap;
-  }
-
-  .portfolio img {
-    width: 100%;
-  }
-
-  .portfolio .column-1 {
-    margin-right: 0;
-  }
-
-  .portfolio figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
+  
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -424,10 +481,7 @@ footer ul li a:hover .icon {
     margin: 10px;
   }
 
-  .portfolio-list ul {
-    justify-content: center;
-
-  }
+ 
 
 }
 
