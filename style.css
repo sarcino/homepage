@@ -378,14 +378,13 @@ nav ul li .resume:hover {
 /* FOOTER */
 
 footer { 
-  height: 100vh;
+  height: 80vh;
   background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-yellow));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   margin: 50px 0 0 0;
   padding: 60px 0;
-  display: flex;
- 
+  display: flex; 
   justify-content: center;
  
 }
