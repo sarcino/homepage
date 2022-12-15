@@ -8,6 +8,7 @@
   --color-alabaster: #fafafa;
   --color-yellow: #CEFF1A;
   --color-purple: #E0BEE2;
+  --color-elections-blue: #A7DCFF;
 }
 
 ::selection {
@@ -37,8 +38,20 @@ body {
   line-height: 2rem;
 }
 
+.hero {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
 .wrapper {
   max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.wrapper-projects {
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -46,7 +59,6 @@ body {
 main {
   margin: 0;
   font-family: var(--font-text);
-  margin-top: 50px;
 }
 
 p {
@@ -58,7 +70,7 @@ ul {
   margin-top: 30px;
 }
 
-main a {
+main p a {
   text-decoration: none;
   color: var(--color-black);
   border-bottom: 2px solid var(--color-black);
@@ -83,7 +95,7 @@ h4 {
 h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 100px;
   line-height: 5rem;
   text-align: center;
 }
@@ -95,10 +107,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 1.5;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0rem;
 }
 
 h4 {
@@ -120,22 +133,12 @@ footer h2 {
 .intro {
   text-align: center;
   padding: 10px 0;
-  margin-bottom: 100px;
-  
+  margin: 0 0 100px 0;
+
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-
-/* HERO END */
-
-.hero {
-  width: 100vw;
- height: auto;
-  
-}
-
-/* HERO END */
 
 /* NAVIGATION */
 
@@ -252,6 +255,7 @@ nav ul li .resume:hover {
   max-width: 55vw;
   min-height: 300px;
   color: var(--color-text);
+
 }
 
 .review figure {
@@ -317,6 +321,60 @@ nav ul li .resume:hover {
 
 /* VIDEO END */
 
+/* INDEX PORTFOLIO */
+
+.portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio img {  
+    max-width: 450px;
+    height: auto;
+}
+
+.column-1, .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.column-1 {
+  order: 1;
+}
+
+.column-2 {
+  order: 2;
+}
+
+.portfolio a img {
+  border: 0;
+}
+
+.portfolio a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  letter-spacing: 0.9px;
+  color: pink;
+  -webkit-transition: all 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+figcaption a:after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  margin-top: -4px;
+  border-bottom: 2px solid pink;
+  transition: width 900ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+
+/* INDEX PORTFOLIO END */
+
 /* PROJECTS */
 
 .two-columns {
@@ -325,11 +383,11 @@ nav ul li .resume:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  column-gap: 10px;  
+  column-gap: 10px;
 }
 
 .two-columns div {
-  max-width:450px;
+  max-width: 450px;
 }
 
 .two-columns img {
@@ -347,46 +405,31 @@ nav ul li .resume:hover {
 .image-small {
   width: 100%;
   height: auto;
+  margin: 20px 0;
 }
 
-.button {
-  text-align: center;
-  margin: 0 auto;
-  padding: 15px 20px;
-  background: var(--color-black);
-  border-radius: 25px;
-  color: var(--color-alabaster);
-  text-decoration: none;
-  font-family: var(--font-text);
-  border: 1px solid var(--color-black);
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  font-weight: normal;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+.project-info {
+  margin-bottom: 50px;
+  font-size: 0.95rem;
+  margin-top: -10px;
+  font-weight: 500;
 }
 
-
-.button:hover {
-  background: none;
-  color: var(--color-black);
-  border: 1px solid var(--color-black);
-}
 
 /* PROJECTS END */
 
 /* FOOTER */
 
-footer { 
+footer {
   height: 70vh;
   background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-yellow));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  margin: 50px 0 0 0;
+  margin: 100px 0 0 0;
   padding: 60px 0;
-  display: flex; 
+  display: flex;
   justify-content: center;
- 
+
 }
 
 .footer-content {
@@ -429,12 +472,6 @@ footer ul li a:hover .icon {
   stroke: var(--color-black);
 }
 
-.nav-portfolio {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 
 @media (max-width: 750px) {
 
@@ -470,7 +507,7 @@ footer ul li a:hover .icon {
     margin-top: 50px;
   }
 
-  
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -481,7 +518,7 @@ footer ul li a:hover .icon {
     margin: 10px;
   }
 
- 
+
 
 }
 
