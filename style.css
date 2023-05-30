@@ -14,7 +14,6 @@
 ::selection {
   background: var(--color-black);
   color: var(--color-alabaster);
- 
 }
 
 * {
@@ -220,7 +219,7 @@ nav ul li .nav-item:hover:before {
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--font-text);
-  border: 1px solid var(--color-yellow);
+  border: 2px solid var(--color-yellow);
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   font-weight: normal;
@@ -230,7 +229,7 @@ nav ul li .nav-item:hover:before {
 .resume:hover {
   background: none;
   color: var(--color-black);
-  border: 1px solid var(--color-yellow);
+  border: 2px solid var(--color-yellow);
 }
 
 /* NAVIGATION END */
