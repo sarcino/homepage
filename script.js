@@ -5,7 +5,7 @@ const reviews = [{
         id: 1,
         name: "KAREL HASEK",
         job: "former direct manager",
-        text: "Her technical knowledge is of the highest level. She’s extremely fast learner. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. I can wholeheartedly recommend Sarka."
+        text: "I had the pleasure to work with Sarka for almost 2 years. Not only she has excellent people skills and is able to work seamlessly with many different roles both internally and externally, her technical knowledge is also of the highest level. She’s extremely fast learner, quickly grasps and further develops any processes or workflows we worked with. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. I can wholeheartedly recommend Sarka, as she will be and excellent addition to any team."
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const reviews = [{
         id: 4,
         name: "JURAJ KOVAC",
         job: "mentor",
-        text: "If you are looking for open-minded talent and are willing to offer some support to a capable learner, I am sure Sarka will be a valuable contribution to any creative project."
+        text: "She has always demonstrated resourcefulness that helped her master a field in which she hadn't had prior formal training. She's a capable coder with an eye for style and clean uncluttered design. While her skill set favours design over programming, she's a practical learner—with a meaningful project to work on and some guidance, she will quickly fill in the gaps. If you are looking for open-minded talent and are willing to offer some support to a capable learner, I am sure she will be a valuable contribution to any creative project."
     },
 ];
 

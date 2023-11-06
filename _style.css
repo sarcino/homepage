@@ -4,11 +4,11 @@
 :root {
   --font-headline: 'Josefin Sans', sans-serif;
   --font-text: "Open Sans", sans-serif;
-  --color-black: #14080e;
-  --color-alabaster: #fafafa;
-  --color-yellow: #CEFF1A;
-  --color-purple: #E0BEE2;
+  --color-black: #040303;
+  --color-alabaster: #FFFCFF;
+  --color-purple: #A97C73;
   --color-elections: #CEEBFF;
+  --color-redwood: #AF3E4D;
 }
 
 ::selection {
@@ -36,6 +36,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 2rem;
+  height: 100vh;
 }
 
 .hero {
@@ -193,7 +194,7 @@ nav ul li .nav-item:before {
   bottom: .1px;
   left: 0;
   z-index: -1;
-  background-color: var(--color-yellow);
+  background-color: var(--color-redwood);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -213,13 +214,13 @@ nav ul li .nav-item:hover:before {
 
 .resume {
   padding: 15px 20px;
-  background: var(--color-yellow);
+  background: var(--color-redwood);
   border-radius: 25px;
   color: var(--color-black);
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--font-text);
-  border: 2px solid var(--color-yellow);
+  border: 2px solid var(--color-redwood);
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   font-weight: normal;
@@ -229,7 +230,7 @@ nav ul li .nav-item:hover:before {
 .resume:hover {
   background: none;
   color: var(--color-black);
-  border: 2px solid var(--color-yellow);
+  border: 2px solid var(--color-redwood);
 }
 
 /* NAVIGATION END */
@@ -448,7 +449,7 @@ nav ul li .nav-item:hover:before {
 
 footer {
   height: 500px;
-  background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-yellow));
+  background: linear-gradient(-45deg, var(--color-purple), var(--color-alabaster), var(--color-redwood));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   margin: 100px 0 0 0;
