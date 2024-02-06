@@ -5,11 +5,10 @@
     --font-headline: 'Josefin Sans', sans-serif;
     --font-text: "Open Sans", sans-serif;
     --color-timberwolf: #ffffff;
-    --color-green: #60712F;
     --color-white: #eeeeee;
     --color-black: #000505;
     --color-grey: #5a5a5a;
-    --color-tomato: #F55D3E;
+    --color-tomato: #d36242;
 
 }
 
@@ -37,8 +36,8 @@ body {
     color: var(--color-black);
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(-45deg, #f3f6fd, #CFDEF3);
-    background-size: 200% 200%;
+    background-image: linear-gradient(-45deg, #f3d7ca, #cdc6e7);
+    background-size: 120% 120%;
     animation: gradient 10s ease infinite;
 }
 
