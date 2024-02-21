@@ -8,7 +8,7 @@
     --color-white: #eeeeee;
     --color-black: #000505;
     --color-grey: #5a5a5a;
-    --color-tomato: #d36242;
+    --color-tomato: #000505;
 
 }
 
@@ -36,23 +36,8 @@ body {
     color: var(--color-black);
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(-45deg, #f3d7ca, #cdc6e7);
-    background-size: 120% 120%;
-    animation: gradient 10s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+    background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal; 
 }
 
 h1 {
@@ -162,7 +147,7 @@ nav ul li a svg {
     font-size: 1.8rem;
     letter-spacing: .02rem;
     line-height: 2.8rem;
-    margin: 30vh 0 20vh 0;
+    margin: 25vh 0 20vh 0;
 }
 
 .intro p {
@@ -252,11 +237,11 @@ nav ul li a svg {
 /* REFERENCE */
 
 .recommendations {
-    margin: 5rem 0;
+    margin: 5rem 0 10rem 0;
 }
 
 .review {
-    margin-top: 2.5rem;
+    margin: 4rem 0;
     padding: 40px 50px;
     font-size: 1.1rem;
     line-height: 2rem;
