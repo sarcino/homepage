@@ -274,6 +274,22 @@ footer ul {
     font-size: 18px;
 }
 
+
+
+.bio-detail {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    object-fit: fill;
+    border: 1px solid var(--color-black);
+    grid-template: "."
+    "."
+                     / .85fr 1fr 1fr;
+    align-items: start;
+    justify-items: stretch;
+    overflow: visible;
+}
+
 @media (max-width: 650px) {
     nav ul {
         flex-direction: column;
