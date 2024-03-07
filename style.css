@@ -4,12 +4,13 @@
 :root {
     --font-headline: 'Josefin Sans', sans-serif;
     --font-text: "Open Sans", sans-serif;
-    --color-timberwolf: #ffffff;
-    --color-white: #eeeeee;
-    --color-black: #000505;
+    --color-white: #ffffff;
+    --color-black: #2B2D42;
     --color-grey: #5a5a5a;
-    --color-tomato: #000505;
-
+    --color-light: #fff7f3;
+    --color-pink: #E86A92;
+    --color-orange: #FFAE03;
+    --color-dark-orange: #E67F0D;
 }
 
 * {
@@ -36,8 +37,7 @@ body {
     color: var(--color-black);
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
-    background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal; 
+    background: var(--color-light);
 }
 
 h1 {
@@ -57,6 +57,17 @@ h2 {
     margin-top: 6rem;
 }
 
+.h1-title, .h2-title {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--color-black);
+    width: auto;
+    display: inline-block;
+}
+
+.h2-title {
+    margin-top: 8vh;
+}
+
 h3 {
     font-family: var(--font-headline);
     font-weight: 500;
@@ -64,11 +75,8 @@ h3 {
     font-size: 2rem;
 }
 
-.subheading {
-    font-size: 0.9rem;
-    font-weight: 500;
-    font-family: var(--font-text);
-    color: var(--color-grey);
+p {
+    margin-top: 25px;
 }
 
 .wrapper {
@@ -111,7 +119,7 @@ nav ul li .nav-item:before {
     bottom: .5px;
     left: 0;
     z-index: -1;
-    background-color: var(--color-tomato);
+    background-color: var(--color-pink);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -129,52 +137,27 @@ nav ul li .nav-item:hover:before {
     font-weight: bold;
 }
 
-nav ul li a svg {
-    max-height: 20px;
-    width: auto;
-}
-
-.nav-icon {
-    margin-left: -10px;
-}
-
-.icon:hover,
-.nav-icon:hover {
-    fill: var(--color-tomato);
-}
-
-.intro {
-    font-size: 1.8rem;
-    letter-spacing: .02rem;
-    line-height: 2.8rem;
+main {
     margin: 25vh 0 20vh 0;
 }
 
+.intro {
+    font-size: 1.5rem;
+    letter-spacing: .02rem;
+    line-height: 2.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;    
+}
+
+.intro div {
+    max-width: 480px;
+}
+
 .intro p {
-    margin: 3rem 0 1rem 0;
-}
-
-.intro a:first-child {
-    background-color: var(--color-black);
-    text-decoration: none;
-    color: var(--color-timberwolf);
-    letter-spacing: 0.05rem;
-    border-radius: 100px;
-    padding: 10px 25px;
-    display: inline-block;
-    border: 2px solid transparent;
-    font-size: 1.1rem;
-}
-
-.intro a:first-child:hover {
-    background-color: transparent;
-    text-decoration: none;
-    letter-spacing: 0.05rem;
-    border-radius: 100px;
-    padding: 10px 25px;
-    display: inline-block;
-    color: var(--color-black);
-    border: 2px solid var(--color-black);
+    margin: -30px 0 30px 0;
 }
 
 /* ABOUT ME */
@@ -183,33 +166,25 @@ nav ul li a svg {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 20px;
-    margin-bottom: 20vh;
-}
-
-.about-me div {
-    max-width: 550px;
-}
-
-.about-me p {
-    font-size: 1.26rem;
+    font-size: 18px;
     letter-spacing: .02rem;
     line-height: 2.4rem;
 }
 
-.about-me p:not(:first-child) {
-    margin-top: 2rem;
+.about-me div {
+    max-width: 480px;
 }
 
-.about-me a {
+.intro a, .about-me a, footer a {
     text-decoration: none;
-    border-bottom: 3px solid var(--color-black);
     color: var(--color-black);
+    border-bottom: 2px solid var(--color-pink);    
 }
 
-.about-me a:hover {
-    border-bottom: 0px;
+.intro a:hover, .about-me a:hover, footer a:hover {
+    border-bottom: 2px dotted var(--color-black);
 }
 
 .outside-work p {
@@ -219,56 +194,67 @@ nav ul li a svg {
 /* VIDEO */
 
 .video {
-    width: 260px;
-    max-width: 260px;
+    width: 200px;
+    max-width: 200px;
     margin: 0;
     position: relative;
 }
 
 .video video {
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     z-index: 0;
     border-radius: 200px;
-    border: 5px solid var(--color-timberwolf);
+    border: 3px solid var(--color-white);
 }
 
 /* REFERENCE */
-
-.recommendations {
-    margin: 5rem 0 10rem 0;
-}
-
-.review {
-    margin: 4rem 0;
-    padding: 60px 50px;
-    font-size: 1.1rem;
-    line-height: 2rem;
-    background: var(--color-timberwolf);
-    border-radius: 30px;
-}
-
 .author {
     font-weight: bolder;
     font-size: 1rem;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 0.8rem;
 }
 
 .position {
-    padding-top: 10px;
     font-size: 0.9rem;
-    line-height: 1.4;
-    
+    margin-top: 0px;
 }
 
+.subheading {
+    font-size: 16px;
+    font-family: var(--font-text);
+    color: var(--color-grey);
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.review {
+    margin: 4rem 0;
+    padding: 45px 40px;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    background: var(--color-white);
+    border-radius: 30px;
+    position: relative;
+    max-width: 60rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    border: 1px dotted var(--color-dark-orange);
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
 
 /* FOOTER */
 
 footer {
-    background-color: var(--color-timberwolf);
+    background-color: var(--color-white);
     padding: 20px 0;
 }
 
@@ -283,41 +269,16 @@ footer {
 
 footer ul {
     list-style-type: none;
-    margin: 50px 0 0 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 30px;
-}
-
-footer ul li {
-    text-decoration: none;
-}
-
-footer ul li a:hover .icon {
-    transition: all 0.3s ease 0s;
-}
-
-footer ul li a:hover .icon {
-    fill: transparent;
-    stroke: var(--color-black);
-}
-
-.email {
-    font-weight: bolder;
-    margin-top: 30px;
-    font-size: 1.4rem;
+    letter-spacing: .02rem;
+    line-height: 2.4rem;
+    font-size: 18px;
 }
 
 @media (max-width: 650px) {
-
     nav ul {
         flex-direction: column;
         justify-content: center;
         align-content: center;
         gap: 30px;
     }
-
-
 }
