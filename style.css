@@ -231,7 +231,7 @@ main {
     margin-bottom: 50px;
 }
 
-.review {
+figure {
     margin: 4rem 0;
     padding: 45px 40px;
     font-size: 1.1rem;
@@ -289,6 +289,8 @@ footer ul {
     justify-items: stretch;
     overflow: visible;
 }
+
+
 
 @media (max-width: 650px) {
     nav ul {
