@@ -1,1 +1,46 @@
-const reviews=[{id:1,name:"KAREL HASEK",job:"direct manager, Technical manager",text:"She’s extremely fast learner, quickly grasps and further develops any processes or workflows we worked with. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. Sarka will be and excellent addition to any team."},{id:2,name:"CRISTINA IORDAN",job:"direct manager, Global service lead",text:"A pleasure to recommend Sarka as a very bright and motivated person that she is. A quick learner, which has shown the ability to work on multiple projects, prioritizing the marketing requests in line with business priorities. Sarka is remarkable through high quality output delivery, on time, in budget and within scope."},{id:3,name:"IRINA VERLAN",job:"colleague, Strategic marketer",text:"Sarka is the most professional and efficient at work, as well as well-presented and self-motivated, and she can work both independently and as part of a team. I recommend her because of her attention to detail and teamwork spirit. I'm confident she'll be an excellent addition to any team she joins."},{id:4,name:"ANDREJ VIGAS",job:"colleague, Graphic designer",text:"Her professionalism and meticulous approach to work make her an outstanding expert. Every task she assigned was always clear, precise, and well-structured, which greatly facilitated our collaboration. Communication with her was always of a high standard. Šárka was always open to constructive discussion."}],author=document.getElementById("author"),job=document.getElementById("job"),info=document.getElementById("info"),prevBtn=document.querySelector(".prev-btn"),nextBtn=document.querySelector(".next-btn");let currentItem=0;function showPerson(e){const t=reviews[e];author.textContent=t.name,job.textContent=t.job,info.textContent=t.text}window.addEventListener("DOMContentLoaded",(function(){showPerson(currentItem)})),nextBtn.addEventListener("click",(function(){currentItem++,currentItem>reviews.length-1&&(currentItem=0),showPerson(currentItem)})),prevBtn.addEventListener("click",(function(){currentItem--,currentItem<0&&(currentItem=reviews.length-1),showPerson(currentItem)}));
+const reviews =
+    [{
+        id: 1,
+        name: "KAREL HASEK",
+        job: "direct manager, Technical manager",
+        text: "She’s extremely fast learner, quickly grasps and further develops any processes or workflows we worked with. Sarka has very deep knowledge of web standards, technologies and great understanding of topics such as SEO, Accessibility and Web Analytics. Sarka will be and excellent addition to any team."
+    },
+    {
+        id: 2,
+        name: "CRISTINA IORDAN",
+        job: "direct manager, Global service lead",
+        text: "A pleasure to recommend Sarka as a very bright and motivated person that she is. A quick learner, which has shown the ability to work on multiple projects, prioritizing the marketing requests in line with business priorities. Sarka is remarkable through high quality output delivery, on time, in budget and within scope."
+    },
+    {
+        id: 3,
+        name: "IRINA VERLAN",
+        job: "colleague, Marketing manager",
+        text: "Sarka is the most professional and efficient at work, as well as well-presented and self-motivated, and she can work both independently and as part of a team. I recommend her because of her attention to detail and teamwork spirit. I'm confident she'll be an excellent addition to any team she joins."
+    },
+    {
+        id: 4,
+        name: "ANDREJ VIGAS",
+        job: "colleague, Graphic designer",
+        text: "Her professionalism and meticulous approach to work make her an outstanding expert. Every task she assigned was always clear, precise, and well-structured, which greatly facilitated our collaboration. Communication with her was always of a high standard. Šárka was always open to constructive discussion."
+    }],
+
+    author = document.getElementById("author"), job = document.getElementById("job"),
+    info = document.getElementById("info"), prevBtn = document.querySelector(".prev-btn"),
+    nextBtn = document.querySelector(".next-btn"); let currentItem = 0;
+
+function showPerson(e) { const t = reviews[e]; author.textContent = t.name, job.textContent = t.job, info.textContent = t.text }
+window.addEventListener("DOMContentLoaded", (function () { showPerson(currentItem) })), nextBtn.addEventListener("click", (function () { currentItem++, currentItem > reviews.length - 1 && (currentItem = 0), showPerson(currentItem) })), prevBtn.addEventListener("click", (function () { currentItem--, currentItem < 0 && (currentItem = reviews.length - 1), showPerson(currentItem) }));
+
+
+// Determine current language (e.g., 'en' or 'cs')
+var currLang = getQSParameterByName('lang') || 'en'; // or your logic from linguJSON
+
+// Set the <html> lang attribute
+document.documentElement.lang = currLang;
+
+
+
+
+
+
+
